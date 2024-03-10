@@ -1,3 +1,6 @@
+# Book Management
+
+This Project is supposed for submission Home Test Software Engineer 2024 at Azura Lab. 
 
 ## Run Locally
 
@@ -10,7 +13,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd azuralabssubmission
 ```
 
 Create Database on MySQL With name atafbookmanagement

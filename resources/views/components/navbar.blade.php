@@ -68,7 +68,7 @@
             <div class="col">
                 <!-- Page pre-title -->
                 <div class="page-pretitle">
-                    Ataf's Book Management
+                   {{ $pretitle ?? "Ataf's Book Management" }}
                 </div>
                 <h2 class="page-title">
                     {{ $title ?? "Ataf's Book Management" }}

@@ -6,7 +6,7 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark">
             <a href="{{ route('workspace.dashboard') }}" class="text-center" style="text-decoration: none;">
-                ABM
+                Book Management
             </a>
         </h1>
         <div class="navbar-nav flex-row d-lg-none">
@@ -171,22 +171,25 @@
             <ul class="navbar-nav pt-lg-3">
                 <li class="nav-item  {{ request()->routeIs('workspace.dashboard') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('workspace.dashboard') }}">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard"
-                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 4h6v8h-6z" />
-                            <path d="M4 16h6v4h-6z" />
-                            <path d="M14 12h6v8h-6z" />
-                            <path d="M14 4h6v4h-6z" />
-                        </svg>
+                        <span
+                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-comet"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" />
+                                <path d="M4 4l7 7" />
+                                <path d="M9 4l3.5 3.5" />
+                                <path d="M4 9l3.5 3.5" />
+                            </svg>
+                        </span>
                         <span class="nav-link-title">
-                             Dashboard
+                            Dashboard
                         </span>
                     </a>
                 </li>
-                <li class="nav-item  {{ request()->routeIs('workspace.dashboard') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('workspace.dashboard') }}">
+                <li class="nav-item  {{ request()->routeIs('workspace.book.index') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('workspace.book.index') }}">
                         <span
                             class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book"
@@ -205,8 +208,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item  {{ request()->routeIs('workspace.dashboard') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('workspace.dashboard') }}">
+                <li class="nav-item  {{ request()->routeIs('workspace.category.index') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('workspace.category.index') }}">
                         <span
                             class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category"
