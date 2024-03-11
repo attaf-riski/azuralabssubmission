@@ -39,6 +39,7 @@
                             <option value="{{ $category->id }}" @if ($category->id == $book->category_id) selected @endif>
                                 {{ $category->name }}</option>
                         @endforeach
+                    </select>
                 </div>
             </div>
             <div class="mb-3">
